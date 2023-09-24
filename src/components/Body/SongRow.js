@@ -1,7 +1,8 @@
 import React from 'react'
 import "./SongRow.css"
 
-export const SongRow = ({track="test"}) => {
+export const SongRow = ({track}) => {
+  console.log(track)
   return (
     <div className='songRow'>
         <img className='songRow_album' src={track.album.images[0].url} alt="" />
